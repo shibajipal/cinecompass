@@ -78,9 +78,16 @@ const Home = ({
         <header>
           <h1>
             Find{' '}
-            <span className="text-6xl font-extrabold inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent">
-              Movies
-            </span>{' '}
+            <span
+  className="
+    text-6xl font-extrabold inline-block
+    text-transparent bg-clip-text
+    bg-gradient-to-r from-primary via-secondary to-accent
+   
+  "
+>
+  Movies
+</span>{' '}
             that suit your taste!
           </h1>
 

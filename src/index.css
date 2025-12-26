@@ -82,7 +82,7 @@
   }
 
   .search {
-    @apply w-full bg-text/5 ring-1 ring-text/10 px-4 py-3 rounded-lg mt-10 max-w-3xl mx-auto;
+    @apply w-full bg-text/5 hover:bg-text/10 ring-1  ring-text/10 hover:ring-text/15 px-4 py-3 rounded-lg mt-10 max-w-3xl mx-auto transition-transform duration-300 hover:scale-105;
 
     & div {
       @apply relative flex items-center;
