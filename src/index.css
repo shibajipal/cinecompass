@@ -101,7 +101,7 @@
     @apply space-y-9;
 
     & ul {
-      @apply grid grid-cols-1 gap-5 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+      @apply grid grid-cols-4 gap-5;
     }
   }
 
@@ -112,9 +112,6 @@
       @apply rounded-lg h-auto w-full;
     }
 
-    & h3 {
-      @apply text-text font-bold text-base line-clamp-1;
-    }
 
     & .content {
       @apply mt-2 flex flex-row items-center flex-wrap gap-2;

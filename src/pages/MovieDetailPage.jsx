@@ -114,9 +114,9 @@ const MovieDetailPage = () => {
 
           </div>
                       {movie.videos && movie.videos.length > 0 && (
-              <div className="flex flex-col w-full ml-0 sm:ml-[-280px] mt-4 sm:mt-6">
-                <p className="text-accent text-lg sm:text-xl font-semibold mb-3">Trailers & Videos</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-10 w-full">
+              <div className="flex flex-col w-full ml-[-280px] mt-6">
+                <p className="text-accent text-xl font-semibold mb-3">Trailers & Videos</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
                   {movie.videos.filter(video => video.type === 'Trailer' || video.type === 'Teaser').slice(0, 6).map((video) => (
                     <div key={video.id} className="flex flex-col ">
                       <div className="relative w-full overflow-hidden rounded-lg bg-black" style={{ paddingBottom: '60%' }}>
@@ -129,7 +129,7 @@ const MovieDetailPage = () => {
                           allowFullScreen
                         ></iframe>
                       </div>
-                      <p className="text-text/70 text-xs sm:text-sm font-medium">{video.name}</p>
+                      <p className="text-text/70 text-sm font-medium">{video.name}</p>
                     </div>
                   ))}
                 </div>

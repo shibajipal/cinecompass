@@ -14,7 +14,7 @@ const MovieCard = ({ movie }) => {
   bg-text/5
   backdrop-blur-md
   rounded-lg
-  p-3
+  p-2 sm:p-3
   flex flex-col
   ring-1 ring-text/10
   shadow-lg shadow-text/5
@@ -32,12 +32,12 @@ const MovieCard = ({ movie }) => {
       </div>
 
      
-      <h3 className="mt-2 text-text text-m font-semibold line-clamp-2">
+      <h3 className="mt-2 text-text text-[8px] sm:text-xl font-semibold line-clamp-2">
         {title}
       </h3>
 
    
-      <div className="mt-1 flex items-center gap-2 text-xs">
+      <div className="mt-1 flex flex-wrap items-center gap-1 sm:gap-2 text-[8px] sm:text-xs">
         <img src={starIcon} className="w-3 h-3" />
 
         <span className="text-text/70 font-medium">
